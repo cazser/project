@@ -4,5 +4,17 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background: rgb(242, 242, 242);
+}
+
+.sitemapFolderIcon {
+    background: url(images/folder_closed_blue.svg) no-repeat center center, linear-gradient(transparent,transparent);
+}
+
+.sitemapPageIcon {
+    margin: 0px 6px -3px 3px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(images/page_lt_grey.svg) no-repeat center center, linear-gradient(transparent,transparent);
 }
