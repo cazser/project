@@ -356,10 +356,17 @@
 						<el-collapse v-model="activeNames">
   							<el-collapse-item>
     							<template #title>
-      								<i class="header-icon el-icon-tickets"></i>
-					  				<span>消息管理</span>
+									<router-link to="/messageManage">
+      									<i class="header-icon el-icon-tickets"></i>
+					  					<span>消息管理</span>
+									</router-link>
     							</template>
-								<div><i class="header-icon el-icon-tickets"></i>新增消息</div>
+								<div>
+									<router-link to="/newMessage">
+										<i class="header-icon el-icon-tickets"></i>
+										新增消息
+									</router-link>	
+								</div>
 							  </el-collapse-item>
 						</el-collapse>
 						</div>
@@ -371,13 +378,18 @@
       						<i class="header-icon el-icon-folder"></i>
 					  		<span>办公区管理员</span>
     					</template>
-						<router-link to="/"><i class="el-icon-tickets"></i>选择角色</router-link>
+						<router-link to="/selectCharacter1">
+							<i class="el-icon-tickets"></i>
+							选择角色
+						</router-link>
 						<div style="margin-left: 10px;">
 						<el-collapse v-model="activeNames">
   							<el-collapse-item>
     							<template #title>
-      								<i class="header-icon el-icon-tickets"></i>
-					  				<span>会议室管理</span>
+									<router-link to="/meetingRoomManage">
+      									<i class="header-icon el-icon-tickets"></i>
+					  					<span>会议室管理</span>
+									</router-link>
     							</template>
 								<div style="margin-left: 10px;">
 								<el-collapse v-model="activeNames">

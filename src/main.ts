@@ -49,6 +49,10 @@ import CheckOvertimeRecord from './pages/CheckOvertimeRecord.vue'
 import Detail1 from './pages/Detail1.vue'
 import CancelRecord from './pages/CancelRecord.vue'
 import Detail2 from './pages/Detail2.vue'
+import MessageManage from './pages/MessageManage.vue';
+import NewMessage from './pages/NewMessage.vue'
+import SelectCharacter1 from './pages/SelectCharacter1.vue'
+import MeetingRoomManage from './pages/MeetingRoomManage.vue'
 
 
 
@@ -106,7 +110,11 @@ const router  = createRouter({
 		{path: '/checkOvertimeRecord', component: CheckOvertimeRecord},
 		{path: '/detail1', component: Detail1},
 		{path: '/cancelRecord', component: CancelRecord},
-		{path: '/detail2', component: Detail2}
+		{path: '/detail2', component: Detail2},
+		{path: '/messageManage', component: MessageManage},
+		{path: '/newMessage', component: NewMessage},
+		{path:'/selectCharacter1', component: SelectCharacter1},
+		{path: '/meetingRoomManage', component: MeetingRoomManage}
 	]
 })
 

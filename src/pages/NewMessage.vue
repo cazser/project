@@ -1,0 +1,28 @@
+<template>
+	 <div id="base" class="">
+    </div>
+    
+</template>
+
+<style scoped>
+body {
+  margin:0px;
+  background-image:none;
+  position:relative;
+  left:0px;
+  width:10px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+}
+.form_sketch {
+  border-color:transparent;
+  background-color:transparent;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+
+
+</style>

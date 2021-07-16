@@ -1,5 +1,5 @@
 <template>
-	<div id="base" class="">
+	 <div id="base" class="">
 
       <!-- Unnamed (矩形) -->
       <div id="u110" class="ax_default box_2">
@@ -194,12 +194,9 @@
       </div>
     </div>
     
-
 </template>
 
-
 <style scoped>
-
 body {
   margin:0px;
   background-image:none;
