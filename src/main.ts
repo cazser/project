@@ -12,7 +12,7 @@ import SystemManage from './pages/SystemManage.vue'
 import SelectCharacter1 from './pages/SelectCharacter1.vue'
 import MeetingManage from './pages/MeetingManage.vue'
 import MeetingRoomList from './pages/MeetingRoomList.vue'
-
+import New from './pages/New.vue'
 import 'ant-design-vue/dist/antd.css';
 
 //import Component from './shims-vue'
@@ -35,7 +35,8 @@ const router  = createRouter({
 		{path:'/selectCharacter1', component: SelectCharacter1},
 		{path:'/xxx', component: Frank2},
 		{path:'/meetingManage', component: MeetingManage},
-		{path:'/meetingRoomList', component: MeetingRoomList}
+		{path:'/meetingRoomList', component: MeetingRoomList},
+		{path:'/new', component: New}
 	]
 })
 

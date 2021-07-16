@@ -1,5 +1,5 @@
 <template>
-  <el-container style="height: 100%; border: 1px solid #eee">
+  <el-container style="height: 100vh; border: 1px solid #eee">
   <el-aside width="200px" style="background-color: rgb(238, 241, 246);overflow:scroll;">
 	    <el-collapse v-model="activeNames">
   			<el-collapse-item>
@@ -70,7 +70,11 @@
 											</router-link>
     									</template>
 										  <ul>
-											  <li><i class="header-icon el-icon-tickets"></i>新增</li>
+											  <li>
+												  <router-link to="/new">
+												  	<i class="header-icon el-icon-tickets"></i>新增
+												  </router-link> 
+											  </li>
 											  <li><i class="header-icon el-icon-tickets"></i>编辑</li>
 											  <li><i class="header-icon el-icon-tickets"></i>停用</li>
 											  <li><i class="header-icon el-icon-tickets"></i>批量导入(二期)</li>
