@@ -53,6 +53,11 @@ import MessageManage from './pages/MessageManage.vue';
 import NewMessage from './pages/NewMessage.vue'
 import SelectCharacter1 from './pages/SelectCharacter1.vue'
 import MeetingRoomManage from './pages/MeetingRoomManage.vue'
+import MeetingRoomList1 from './pages/MeetingRoomList1.vue'
+import New1 from './pages/New1.vue'
+import Edit1 from './pages/Edit1.vue'
+import OutOfUse1 from './pages/OutOfUse1.vue'
+
 
 
 
@@ -114,7 +119,12 @@ const router  = createRouter({
 		{path: '/messageManage', component: MessageManage},
 		{path: '/newMessage', component: NewMessage},
 		{path:'/selectCharacter1', component: SelectCharacter1},
-		{path: '/meetingRoomManage', component: MeetingRoomManage}
+		{path: '/meetingRoomManage', component: MeetingRoomManage},
+		{path:'/meetingRoomList1', component: MeetingRoomList1},
+		{path:'/new1', component: New1},
+		{path:'/edit1', component: Edit1},
+		{path:'/outOfUse1', component: OutOfUse1},
+	
 	]
 })
 
