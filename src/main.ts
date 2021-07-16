@@ -45,6 +45,11 @@ import AssocScreenDisplay from './pages/AssocScreenDisplay.vue'
 import HistoryBookRecord from './pages/HistoryBookRecord.vue'
 import BookSuccessRecord from './pages/BookSuccessRecord.vue'
 import Detail from './pages/Detail.vue'
+import CheckOvertimeRecord from './pages/CheckOvertimeRecord.vue'
+import Detail1 from './pages/Detail1.vue'
+import CancelRecord from './pages/CancelRecord.vue'
+import Detail2 from './pages/Detail2.vue'
+
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -97,7 +102,11 @@ const router  = createRouter({
 		{path: '/assocScreenDisplay', component: AssocScreenDisplay},
 		{path: '/historyBookRecord', component: HistoryBookRecord},
 		{path: '/bookSuccessRecord', component: BookSuccessRecord},
-		{path: '/detail', component: Detail}
+		{path: '/detail', component: Detail},
+		{path: '/checkOvertimeRecord', component: CheckOvertimeRecord},
+		{path: '/detail1', component: Detail1},
+		{path: '/cancelRecord', component: CancelRecord},
+		{path: '/detail2', component: Detail2}
 	]
 })
 
