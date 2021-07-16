@@ -9,7 +9,12 @@ import SelectCharacter from './pages/SelectCharacter.vue'
 import LevelAssign from './pages/LevelAssign.vue'
 import NewLevel from './pages/NewLevel.vue'
 import SystemManage from './pages/SystemManage.vue'
+import SelectCharacter1 from './pages/SelectCharacter1.vue'
+import MeetingManage from './pages/MeetingManage.vue'
+import MeetingRoomList from './pages/MeetingRoomList.vue'
+
 import 'ant-design-vue/dist/antd.css';
+
 //import Component from './shims-vue'
 import ElementPlus from 'element-plus';
 import 'element-plus/lib/theme-chalk/index.css';
@@ -27,7 +32,10 @@ const router  = createRouter({
 		{path:'/levelAssign', component: LevelAssign},
 		{path:'/newLevel', component: NewLevel},
 		{path:'/systemManage', component: SystemManage},
-		{path:'/xxx', component: Frank2}
+		{path:'/selectCharacter1', component: SelectCharacter1},
+		{path:'/xxx', component: Frank2},
+		{path:'/meetingManage', component: MeetingManage},
+		{path:'/meetingRoomList', component: MeetingRoomList}
 	]
 })
 
