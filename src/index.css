@@ -7,6 +7,10 @@
   background: rgb(242, 242, 242);
 }
 
+ol, ul{
+	list-style: none;
+}
+
 .sitemapFolderIcon {
     background: url(images/folder_closed_blue.svg) no-repeat center center, linear-gradient(transparent,transparent);
 }

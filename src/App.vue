@@ -61,10 +61,118 @@
       										<i class="header-icon el-icon-tickets"></i>
 					 		 				<span>会议室列表</span>
     									</template>
+										  <ul>
+											  <li>新增</li>
+											  <li>编辑</li>
+											  <li>停用</li>
+											  <li>批量导入(二期)</li>
+											  <li>批量修改(二期)</li>
+										  </ul>
+									  </el-collapse-item>
+									  
+										
+
+									</el-collapse>
+								</div>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    									<template #title>
+      										<i class="header-icon el-icon-tickets"></i>
+					 		 				<span>办公区管理</span>
+    									</template>
+										  <div>
+											  新增办公区
+										  </div>
+									  </el-collapse-item>
+									  
+										
+
+									</el-collapse>
+								</div>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    									<template #title>
+      										<i class="header-icon el-icon-tickets"></i>
+					 		 				<span>会议室设备</span>
+    									</template>
+										<div>
+										  新增会议室设备
+									  </div>
+										 
 									  </el-collapse-item>
 									  
 									</el-collapse>
 								</div>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    									<template #title>
+      										<i class="header-icon el-icon-tickets"></i>
+					 		 				<span>额外需求(二期)</span>
+    									</template>
+										  <div>
+											  新增额外需求
+										  </div>
+									  </el-collapse-item>
+									  
+										
+
+									</el-collapse>
+								</div>
+								<div>
+								<router-link to="/">预定须知</router-link>
+								</div>
+								<div>
+								<router-link to="/">消息提醒</router-link>
+								</div>
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>预定管理</span>
+    							</template>
+								<div>
+									预定管理
+								</div>
+								<div>
+									当前预定情况
+								</div>
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>应用配置</span>
+    							</template>
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>历史预定记录</span>
+    							</template>
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>消息管理</span>
+    							</template>
 							  </el-collapse-item>
 						</el-collapse>
 						</div>
