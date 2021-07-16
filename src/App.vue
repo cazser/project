@@ -183,11 +183,16 @@
 						<el-collapse v-model="activeNames">
   							<el-collapse-item>
     							<template #title>
-      								<i class="header-icon el-icon-tickets"></i>
-					  				<span>预定管理</span>
+									<router-link to="/bookManage">
+      									<i class="header-icon el-icon-tickets"></i>
+					  					<span>预定管理</span>
+									</router-link>
     							</template>
-								<div><i class="header-icon el-icon-tickets"></i>
+								<div>
+									<router-link to="/bookManage1">
+									<i class="header-icon el-icon-tickets"></i>
 									预定管理
+									</router-link>
 								</div>
 								<div><i class="header-icon el-icon-tickets"></i>
 									当前预定情况

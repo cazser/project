@@ -28,8 +28,8 @@ import ExtraRequire from './pages/ExtraRequire.vue'
 import NewExtraRequire from './pages/NewExtraRequire.vue'
 import BookToKnow from './pages/BookToKnow.vue'
 import MessageRemind from './pages/MessageRemind.vue'
-
-
+import BookManage from './pages/BookManage.vue'
+import BookManage1 from './pages/BookManage1.vue'
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -65,7 +65,9 @@ const router  = createRouter({
 		{path:'/extraRequire', component: ExtraRequire},
 		{path:'/newExtraRequire', component: NewExtraRequire},
 		{path:'/bookToKnow', component: BookToKnow},
-		{path:'/messageRemind', component: MessageRemind}
+		{path:'/messageRemind', component: MessageRemind},
+		{path:'/bookManage', component: BookManage},
+		{path:'/bookManage1', component: BookManage1}
 	]
 })
 
