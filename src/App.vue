@@ -1,56 +1,71 @@
 <template>
-  <el-container style="height: 500px; border: 1px solid #eee">
+  <el-container style="height: 100%; border: 1px solid #eee">
   <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-    <el-menu :default-openeds="['1', '3']">
-      <el-submenu index="1">
-        <template #title><i class="el-icon-folder"></i>管理后台</template>
-        <el-submenu index="1-1">
-        	<template #title><i class="el-icon-folder"></i>运营者</template>
-			<el-menu-item-group>
-				<el-menu-item>
-					<el-collapse accordion>
-  						<el-collapse-item>
+	    <el-collapse v-model="activeNames">
+  			<el-collapse-item>
+    			<template #title>
+      				<i class="header-icon el-icon-folder"></i>
+					  <span>管理后台</span>
+    			</template>
+				<div style="margin-left:10px">
+    			<el-collapse v-model="activeNames">
+  					<el-collapse-item>
     					<template #title>
-							<router-link to="/selectCharacter">选择角色</router-link>
+      						<i class="header-icon el-icon-folder"></i>
+					  		<span>运营者</span>
     					</template>
-							<el-collapse accordion>
-  								<el-collapse-item>
-    								<template #title>
-										<router-link to="/levelAssign">权限分配</router-link>
+						
+						<div style="margin-left:10px">
+							<el-collapse v-model="activeNames">
+								<el-collapse-item>
+									<template #title>
+      									<i class="header-icon el-icon-tickets"></i>
+										<router-link to="/selectCharacter">选择角色</router-link>
 									</template>
-								 </el-collapse-item>
+									<router-link to="/">系统管理</router-link>
+								</el-collapse-item>
 							</el-collapse>
-						  </el-collapse-item>
-						  <el-collapse-item>
-						  </el-collapse-item>
-					</el-collapse>
-				</el-menu-item>
-				<el-menu-item>
-
-				</el-menu-item>
-			</el-menu-item-group>
-			
-	  	</el-submenu>
-	  	<el-submenu index="1-2">
-        <template #title><i class="el-icon-folder"></i>分区管理员</template>
-        
-	  	</el-submenu>
-	  	<el-submenu index="1-3">
-   	     <template #title><i class="el-icon-folder"></i>办公区管理员</template>
-        
-	  	</el-submenu>
-	  </el-submenu>
-	  <el-submenu index="2">
-        <template #title><i class="el-icon-folder"></i>移动端</template>
-        
-	  </el-submenu>
-	  <el-submenu index="3">
-        <template #title><i class="el-icon-folder"></i>PC端</template>
-			<el-menu-item>
-				<router-link to="/selectCharacter">选择身份</router-link>
-			</el-menu-item>
-	  </el-submenu>
-    </el-menu>
+						</div>
+					</el-collapse-item>
+					
+				</el-collapse>
+				<el-collapse v-model="activeNames">
+  					<el-collapse-item>
+    					<template #title>
+      						<i class="header-icon el-icon-folder"></i>
+					  		<span>分区管理员</span>
+    					</template>
+					</el-collapse-item>
+				</el-collapse>
+				<el-collapse v-model="activeNames">
+  					<el-collapse-item>
+    					<template #title>
+      						<i class="header-icon el-icon-folder"></i>
+					  		<span>办公区管理员</span>
+    					</template>
+					</el-collapse-item>
+				</el-collapse>
+				</div>
+  			</el-collapse-item>
+  			<el-collapse-item>
+				  <template #title>
+      				<i class="header-icon el-icon-folder"></i>
+					  <span>移动端</span>
+    			</template>
+    			<div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
+    			<div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+  			</el-collapse-item>
+  			<el-collapse-item>
+				  <template #title>
+      				<i class="header-icon el-icon-folder"></i>
+					  <span>PC端</span>
+    			</template>
+    			<div>简化流程：设计简洁直观的操作流程；</div>
+    			<div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
+    			<div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+  			</el-collapse-item>
+  			
+			</el-collapse>
   </el-aside>
 
   <el-container>
