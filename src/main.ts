@@ -42,6 +42,9 @@ import BookLevel from './pages/BookLevel.vue'
 import JohnerLevel from './pages/JohnerLevel.vue'
 import AssocVideoMeeting from './pages/AssocVideoMeeting.vue'
 import AssocScreenDisplay from './pages/AssocScreenDisplay.vue'
+import HistoryBookRecord from './pages/HistoryBookRecord.vue'
+import BookSuccessRecord from './pages/BookSuccessRecord.vue'
+import Detail from './pages/Detail.vue'
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -91,7 +94,10 @@ const router  = createRouter({
 		{path:'/bookLevel', component: BookLevel},
 		{path: '/johnerLevel', component: JohnerLevel},
 		{path: '/assocVideoMeeting', component: AssocVideoMeeting},
-		{path: '/assocScreenDisplay', component: AssocScreenDisplay}
+		{path: '/assocScreenDisplay', component: AssocScreenDisplay},
+		{path: '/historyBookRecord', component: HistoryBookRecord},
+		{path: '/bookSuccessRecord', component: BookSuccessRecord},
+		{path: '/detail', component: Detail}
 	]
 })
 

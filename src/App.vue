@@ -289,18 +289,27 @@
 						<el-collapse v-model="activeNames">
   							<el-collapse-item>
     							<template #title>
-      								<i class="header-icon el-icon-tickets"></i>
-					  				<span>历史预定记录</span>
+									<router-link to="/historyBookRecord">
+      									<i class="header-icon el-icon-tickets"></i>
+					  					<span>历史预定记录</span>
+									</router-link>
     							</template>
 								
 								<div style="margin-left: 10px;">
 								<el-collapse v-model="activeNames">
   									<el-collapse-item>
     								<template #title>
-      									<i class="header-icon el-icon-tickets"></i>
-					 	 				<span>预定成功记录</span>
+										<router-link to="/bookSuccessRecord">
+      										<i class="header-icon el-icon-tickets"></i>
+					 	 					<span>预定成功记录</span>
+										</router-link>
     								</template>
-									<div><i class="header-icon el-icon-tickets"></i>详情</div>
+									<div>
+										<router-link to="/detail">
+											<i class="header-icon el-icon-tickets"></i>
+											详情
+										</router-link>
+									</div>
 									  </el-collapse-item>
 								</el-collapse>
 								</div>
