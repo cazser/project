@@ -6,6 +6,8 @@ import Frank from './components/Frank.vue';
 import Frank2 from './components/Frank2.vue';
 import Antd from 'ant-design-vue';
 import SelectCharacter from './pages/SelectCharacter.vue'
+import LevelAssign from './pages/LevelAssign.vue'
+
 import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
 import ElementPlus from 'element-plus';
@@ -21,6 +23,7 @@ const router  = createRouter({
 	routes:[
 		{path:'/', component: Frank},
 		{path:'/selectCharacter', component: SelectCharacter},
+		{path:'/levelAssign', component: LevelAssign},
 		{path:'/xxx', component: Frank2}
 	]
 })
