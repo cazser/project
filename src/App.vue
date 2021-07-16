@@ -419,8 +419,18 @@
 													  停用
 												  </router-link>
 											  </li>
-											  <li><i class="header-icon el-icon-tickets"></i>批量导入(二期)</li>
-											  <li><i class="header-icon el-icon-tickets"></i>批量修改(二期)</li>
+											  <li>
+												  <router-link to="/bitImport1">
+												  	<i class="header-icon el-icon-tickets"></i>
+													  批量导入(二期)
+												  </router-link>
+											  </li>
+											  <li>
+												  <router-link to="/bitModify1">
+												 	<i class="header-icon el-icon-tickets"></i>
+													 批量修改(二期)
+												  </router-link>	 
+											  </li>
 										  </ul>
 									  </el-collapse-item>
 									  

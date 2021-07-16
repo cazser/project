@@ -57,6 +57,8 @@ import MeetingRoomList1 from './pages/MeetingRoomList1.vue'
 import New1 from './pages/New1.vue'
 import Edit1 from './pages/Edit1.vue'
 import OutOfUse1 from './pages/OutOfUse1.vue'
+import BitImport1 from './pages/BitImport1.vue'
+import BitModify1 from './pages/BitModify1.vue'
 
 
 
@@ -124,6 +126,8 @@ const router  = createRouter({
 		{path:'/new1', component: New1},
 		{path:'/edit1', component: Edit1},
 		{path:'/outOfUse1', component: OutOfUse1},
+		{path:'/bitImport1', component: BitImport1},
+		{path:'/bitModify1', component: BitModify1}
 	
 	]
 })
