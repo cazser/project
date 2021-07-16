@@ -75,8 +75,16 @@
 												  	<i class="header-icon el-icon-tickets"></i>新增
 												  </router-link> 
 											  </li>
-											  <li><i class="header-icon el-icon-tickets"></i>编辑</li>
-											  <li><i class="header-icon el-icon-tickets"></i>停用</li>
+											  <li>
+												  <router-link to="/edit">
+												  	<i class="header-icon el-icon-tickets"></i>编辑
+												  </router-link>
+											  </li>
+											  <li>
+												  <router-link to="/outOfUse">
+												  <i class="header-icon el-icon-tickets"></i>停用
+												  </router-link>
+											</li>
 											  <li><i class="header-icon el-icon-tickets"></i>批量导入(二期)</li>
 											  <li><i class="header-icon el-icon-tickets"></i>批量修改(二期)</li>
 										  </ul>

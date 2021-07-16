@@ -13,8 +13,11 @@ import SelectCharacter1 from './pages/SelectCharacter1.vue'
 import MeetingManage from './pages/MeetingManage.vue'
 import MeetingRoomList from './pages/MeetingRoomList.vue'
 import New from './pages/New.vue'
-import 'ant-design-vue/dist/antd.css';
+import Edit from './pages/Edit.vue'
+import OutOfUse from './pages/OutOfUse.vue'
 
+
+import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
 import ElementPlus from 'element-plus';
 import 'element-plus/lib/theme-chalk/index.css';
@@ -36,7 +39,9 @@ const router  = createRouter({
 		{path:'/xxx', component: Frank2},
 		{path:'/meetingManage', component: MeetingManage},
 		{path:'/meetingRoomList', component: MeetingRoomList},
-		{path:'/new', component: New}
+		{path:'/new', component: New},
+		{path:'/edit', component: Edit},
+		{path:'/outOfUse', component: OutOfUse}
 	]
 })
 
