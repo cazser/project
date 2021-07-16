@@ -1,7 +1,7 @@
 <template>
   <el-container style="height: 100%; border: 1px solid #eee">
-  <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-	    <el-collapse v-model="activeNames" style="overflow: scroll;">
+  <el-aside width="200px" style="background-color: rgb(238, 241, 246);overflow:scroll;">
+	    <el-collapse v-model="activeNames">
   			<el-collapse-item>
     			<template #title>
       				<i class="header-icon el-icon-folder"></i>
@@ -26,14 +26,18 @@
 										<el-collapse v-model="activeNames">
 											<el-collapse-item>
 											<template #title>
+												<router-link to="/levelAssign">
 												<i class="header-icon el-icon-tickets"></i>
-												<router-link to="/selectCharacter">权限分配</router-link>
+												权限分配
+												</router-link>
 											</template>
-											<router-link to="/"><i class="el-icon-tickets"></i>新增分级</router-link>
+											<router-link to="/newLevel">
+												<i class="el-icon-tickets"></i>新增分级
+											</router-link>
 											</el-collapse-item>
 										</el-collapse>
 									</div>
-									<router-link to="/"><i class="el-icon-tickets"></i>系统管理</router-link>
+									<router-link to="/systemManage"><i class="el-icon-tickets"></i>系统管理</router-link>
 								</el-collapse-item>
 							</el-collapse>
 						</div>
@@ -44,7 +48,7 @@
   					<el-collapse-item>
     					<template #title>
       						<i class="header-icon el-icon-folder"></i>
-					  		<span>分区管理员</span>
+					  		<span>分级管理员</span>
     					</template>
 						<router-link to="/"><i class="el-icon-tickets"></i>选择角色</router-link>
 						<div style="margin-left: 10px;">
@@ -153,6 +157,29 @@
       								<i class="header-icon el-icon-tickets"></i>
 					  				<span>应用配置</span>
     							</template>
+								<div>审批角色管理</div>
+								<div style="margin-left:10px">
+								<el-collapse v-model="activeNames">
+									<el-collapse-item>
+										<template #title>
+											<i class="header-icon el-icon-tickets"></i>
+											<span>
+												审批流程配置
+											</span>
+										</template>
+										<ul style="margin-left:10px">
+											<li>新增</li>
+											<li>第一步</li>
+											<li>第二步</li>
+											<li>第三步</li>
+										</ul>
+									</el-collapse-item>
+								</el-collapse>
+								</div>
+								<div>预定权限</div>
+								<div>参会人权限</div>
+								<div>关联视频会议</div>
+								<div>关联电子屏显示</div>
 							  </el-collapse-item>
 						</el-collapse>
 						</div>
@@ -163,6 +190,40 @@
       								<i class="header-icon el-icon-tickets"></i>
 					  				<span>历史预定记录</span>
     							</template>
+								
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    								<template #title>
+      									<i class="header-icon el-icon-tickets"></i>
+					 	 				<span>预定成功记录</span>
+    								</template>
+									<div>详情</div>
+									  </el-collapse-item>
+								</el-collapse>
+								</div>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    								<template #title>
+      									<i class="header-icon el-icon-tickets"></i>
+					 	 				<span>签到超时记录</span>
+    								</template>
+									<div>详情</div>
+									  </el-collapse-item>
+								</el-collapse>
+								</div>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    								<template #title>
+      									<i class="header-icon el-icon-tickets"></i>
+					 	 				<span>撤销记录</span>
+    								</template>
+									<div>详情</div>
+									  </el-collapse-item>
+								</el-collapse>
+								</div>
 							  </el-collapse-item>
 						</el-collapse>
 						</div>
@@ -173,6 +234,7 @@
       								<i class="header-icon el-icon-tickets"></i>
 					  				<span>消息管理</span>
     							</template>
+								<div>新增消息</div>
 							  </el-collapse-item>
 						</el-collapse>
 						</div>
@@ -185,6 +247,137 @@
 					  		<span>办公区管理员</span>
     					</template>
 						<router-link to="/"><i class="el-icon-tickets"></i>选择角色</router-link>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>会议室管理</span>
+    							</template>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    									<template #title>
+      										<i class="header-icon el-icon-tickets"></i>
+					 		 				<span>会议室列表</span>
+    									</template>
+										  <ul>
+											  <li>新增</li>
+											  <li>编辑</li>
+											  <li>停用</li>
+											  <li>批量导入(二期)</li>
+											  <li>批量修改(二期)</li>
+										  </ul>
+									  </el-collapse-item>
+									  
+										
+
+									</el-collapse>
+								</div>
+								
+								
+								
+								
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>预定管理</span>
+    							</template>
+								<ul>
+									<li>预定管理</li>
+									<li>当前预定情况</li>
+								</ul>
+								
+								
+								
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>应用配置</span>
+    							</template>
+								<div>审批角色管理</div>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    									<template #title>
+      										<i class="header-icon el-icon-tickets"></i>
+					 		 				<span>审批流程配置</span>
+    									</template>
+										  <ul>
+											  <li>新增</li>
+											  <li>第一步</li>
+											  <li>第二步</li>
+											  <li>第三步</li>
+											  
+										  </ul>
+									  </el-collapse-item>
+									  
+										
+
+									</el-collapse>
+								</div>
+								
+								
+								
+								
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>历史预定记录</span>
+    							</template>
+								
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    								<template #title>
+      									<i class="header-icon el-icon-tickets"></i>
+					 	 				<span>预定成功记录</span>
+    								</template>
+									<div>详情</div>
+									  </el-collapse-item>
+								</el-collapse>
+								</div>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    								<template #title>
+      									<i class="header-icon el-icon-tickets"></i>
+					 	 				<span>签到超时记录</span>
+    								</template>
+									<div>详情</div>
+									  </el-collapse-item>
+								</el-collapse>
+								</div>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    								<template #title>
+      									<i class="header-icon el-icon-tickets"></i>
+					 	 				<span>撤销记录</span>
+    								</template>
+									<div>详情</div>
+									  </el-collapse-item>
+								</el-collapse>
+								</div>
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
+						
 					</el-collapse-item>
 				</el-collapse>
 				</div>
@@ -194,17 +387,43 @@
       				<i class="header-icon el-icon-folder"></i>
 					  <span>移动端</span>
     			</template>
-    			<div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-    			<div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+    			<div>多身份选择</div>
+				<div style="margin-left:10px;">
+					<el-collapse-item>
+						<template #title>
+							<i class="header-icon el-icon-folder"></i>
+							<span>会议室列表</span>
+						</template>
+						<div>预定页面</div>
+						<div>预定成功</div>
+						<div>预定详情</div>
+						<div>预定须知</div>
+						<div>参会人</div>
+					</el-collapse-item>
+				</div>
+				<div>查看预定</div>
+				<div>我的预定</div>
+				<div>预定管理</div>
+				<div>公号消息</div>
   			</el-collapse-item>
   			<el-collapse-item>
 				  <template #title>
       				<i class="header-icon el-icon-folder"></i>
 					  <span>PC端</span>
     			</template>
-    			<div>简化流程：设计简洁直观的操作流程；</div>
-    			<div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-    			<div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+    			<div>选择身份</div>
+				<div style="margin-left:10px;">
+					<el-collapse-item>
+						<template #title>
+							<i class="header-icon el-icon-folder"></i>
+							<span>预定申请</span>
+						</template>
+						<div>选择时间</div>
+						<div>预定成功</div>
+					</el-collapse-item>
+				</div>
+				<div>我的预定</div>
+				<div>我的审批</div>
   			</el-collapse-item>
   			
 			</el-collapse>

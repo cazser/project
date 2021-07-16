@@ -7,7 +7,8 @@ import Frank2 from './components/Frank2.vue';
 import Antd from 'ant-design-vue';
 import SelectCharacter from './pages/SelectCharacter.vue'
 import LevelAssign from './pages/LevelAssign.vue'
-
+import NewLevel from './pages/NewLevel.vue'
+import SystemManage from './pages/SystemManage.vue'
 import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
 import ElementPlus from 'element-plus';
@@ -21,9 +22,11 @@ const history = createWebHashHistory()
 const router  = createRouter({
 	history,
 	routes:[
-		{path:'/', component: Frank},
+		{path:'/', redirect:'/selectCharacter'},
 		{path:'/selectCharacter', component: SelectCharacter},
 		{path:'/levelAssign', component: LevelAssign},
+		{path:'/newLevel', component: NewLevel},
+		{path:'/systemManage', component: SystemManage},
 		{path:'/xxx', component: Frank2}
 	]
 })

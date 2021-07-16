@@ -1,0 +1,26 @@
+{
+	// Place your project 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	 "el-collapse-template": {
+	 	"prefix": "sub-collapse",
+	 	"body": [
+			 "<div style=\"margin-left:10px;\">",
+	 			"\t<el-collapse-item>",
+				  "\t\t<template #title>",
+      				"\t\t\t<i class=\"header-icon el-icon-folder\"></i>",
+					  "\t\t\t<span>移动端</span>",
+    			"\t\t</template>",
+    			
+  			"\t</el-collapse-item>",
+			 "</div>"
+  			
+	 	],
+	 	"description": "Log output to console"
+	 }
+	
+}

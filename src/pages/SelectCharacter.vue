@@ -39,7 +39,7 @@
 
         <!-- Unnamed (矩形) -->
         <div id="u5" class="ax_default box_1">
-          <img id="u5_img" class="img " src="images/选择角色/u5.svg"/>
+          <img id="u5_img" class="img " src="/images/选择角色/u5.svg"/>
           <div id="u5_text" class="text " style="display:none; visibility: hidden">
             <p></p>
           </div>
@@ -64,7 +64,7 @@
 
       <!-- Unnamed (线) -->
       <div id="u8" class="ax_default line">
-        <img id="u8_img" class="img " src="images/选择角色/u8.svg"/>
+        <img id="u8_img" class="img " src="/images/选择角色/u8.svg"/>
         <div id="u8_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
