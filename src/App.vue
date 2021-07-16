@@ -19,8 +19,10 @@
 							<el-collapse v-model="activeNames">
 								<el-collapse-item>
 									<template #title>
-      									<i class="header-icon el-icon-tickets"></i>
-										<router-link to="/selectCharacter">选择角色</router-link>
+										<router-link to="/selectCharacter">	
+										<i class="header-icon el-icon-tickets"></i>
+										选择角色
+										</router-link>
 									</template>
 									<div style="margin-left:10px">
 										<el-collapse v-model="activeNames">
@@ -147,11 +149,16 @@
 								<el-collapse v-model="activeNames">
   									<el-collapse-item>
     									<template #title>
-      										<i class="header-icon el-icon-tickets"></i>
-					 		 				<span>额外需求(二期)</span>
+											<router-link to="/extraRequire">
+      											<i class="header-icon el-icon-tickets"></i>
+					 		 					<span>额外需求(二期)</span>
+											</router-link>
     									</template>
-										  <div><i class="header-icon el-icon-tickets"></i>
-											  新增额外需求
+										  <div>
+											  <router-link to="/newExtraRequire">
+											  	<i class="header-icon el-icon-tickets"></i>
+											  	新增额外需求
+											  </router-link>
 										  </div>
 									  </el-collapse-item>
 									  
@@ -160,10 +167,14 @@
 									</el-collapse>
 								</div>
 								<div>
-								<router-link to="/"><i class="header-icon el-icon-tickets"></i>预定须知</router-link>
+								<router-link to="/bookToKnow">
+									<i class="header-icon el-icon-tickets"></i>预定须知
+								</router-link>
 								</div>
 								<div>
-								<router-link to="/"><i class="header-icon el-icon-tickets"></i>消息提醒</router-link>
+								<router-link to="/messageRemind">
+									<i class="header-icon el-icon-tickets"></i>消息提醒
+								</router-link>
 								</div>
 							  </el-collapse-item>
 						</el-collapse>

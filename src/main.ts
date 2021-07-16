@@ -24,12 +24,18 @@ import NewOfficeArea from './pages/NewOfficeArea.vue'
 import NewMeetingRoomEquip from './pages/NewMeetingRoomEquip.vue'
 import MeetingRoomEquip from './pages/MeetingRoomEquip.vue'
 import OfficeAreaManage from './pages/OfficeAreaManage.vue'
+import ExtraRequire from './pages/ExtraRequire.vue'
+import NewExtraRequire from './pages/NewExtraRequire.vue'
+import BookToKnow from './pages/BookToKnow.vue'
+import MessageRemind from './pages/MessageRemind.vue'
+
+
+
 
 import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
 import ElementPlus from 'element-plus';
 import 'element-plus/lib/theme-chalk/index.css';
-
 
 
 
@@ -55,7 +61,11 @@ const router  = createRouter({
 		{path:'/newOfficeArea', component: NewOfficeArea},
 		{path:'/newMeetingRoomEquip', component: NewMeetingRoomEquip},
 		{path:'/meetingRoomEquip', component: MeetingRoomEquip},
-		{path:'/officeAreaManage', component: OfficeAreaManage}
+		{path:'/officeAreaManage', component: OfficeAreaManage},
+		{path:'/extraRequire', component: ExtraRequire},
+		{path:'/newExtraRequire', component: NewExtraRequire},
+		{path:'/bookToKnow', component: BookToKnow},
+		{path:'/messageRemind', component: MessageRemind}
 	]
 })
 
