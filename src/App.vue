@@ -194,8 +194,11 @@
 									预定管理
 									</router-link>
 								</div>
-								<div><i class="header-icon el-icon-tickets"></i>
+								<div>
+									<router-link to="/curBook">
+									<i class="header-icon el-icon-tickets"></i>
 									当前预定情况
+									</router-link>
 								</div>
 							  </el-collapse-item>
 						</el-collapse>
@@ -204,18 +207,27 @@
 						<el-collapse v-model="activeNames">
   							<el-collapse-item>
     							<template #title>
-      								<i class="header-icon el-icon-tickets"></i>
-					  				<span>应用配置</span>
+									<router-link to="/applyConfig">
+      									<i class="header-icon el-icon-tickets"></i>
+					  					<span>应用配置</span>
+									</router-link>
     							</template>
-								<div><i class="header-icon el-icon-tickets"></i>审批角色管理</div>
+								<div>
+									<router-link to="/applyCharacterManage">
+										<i class="header-icon el-icon-tickets"></i>
+										审批角色管理
+									</router-link>
+								</div>
 								<div style="margin-left:10px">
 								<el-collapse v-model="activeNames">
 									<el-collapse-item>
 										<template #title>
-											<i class="header-icon el-icon-tickets"></i>
-											<span>
-												审批流程配置
-											</span>
+											<router-link to="/applyProgressConfig">
+												<i class="header-icon el-icon-tickets"></i>
+												<span>
+													审批流程配置
+												</span>
+											</router-link>
 										</template>
 										<ul style="margin-left:10px">
 											<li><i class="header-icon el-icon-tickets"></i>新增</li>

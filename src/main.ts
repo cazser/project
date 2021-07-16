@@ -30,6 +30,10 @@ import BookToKnow from './pages/BookToKnow.vue'
 import MessageRemind from './pages/MessageRemind.vue'
 import BookManage from './pages/BookManage.vue'
 import BookManage1 from './pages/BookManage1.vue'
+import CurBook from './pages/CurBook.vue'
+import ApplyConfig from './pages/ApplyConfig.vue'
+import ApplyCharacterManage from './pages/ApplyCharacterManage.vue'
+import ApplyProgressConfig from './pages/ApplyProgressConfig.vue'
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -67,7 +71,11 @@ const router  = createRouter({
 		{path:'/bookToKnow', component: BookToKnow},
 		{path:'/messageRemind', component: MessageRemind},
 		{path:'/bookManage', component: BookManage},
-		{path:'/bookManage1', component: BookManage1}
+		{path:'/bookManage1', component: BookManage1},
+		{path:'/curBook', component: CurBook},
+		{path:'/applyConfig', component:ApplyConfig},
+		{path:'/applyCharacterManage', component: ApplyCharacterManage},
+		{path:'/applyProgressConfig', component: ApplyProgressConfig}
 	]
 })
 
