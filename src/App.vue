@@ -85,8 +85,16 @@
 												  <i class="header-icon el-icon-tickets"></i>停用
 												  </router-link>
 											</li>
-											  <li><i class="header-icon el-icon-tickets"></i>批量导入(二期)</li>
-											  <li><i class="header-icon el-icon-tickets"></i>批量修改(二期)</li>
+											  <li>
+												  <router-link to="/bitImport">
+												  <i class="header-icon el-icon-tickets"></i>批量导入(二期)
+												  </router-link>
+											  </li>
+											  <li>
+												  <router-link to="/bitModify">
+												  <i class="header-icon el-icon-tickets"></i>批量修改(二期)
+												  </router-link>
+											  </li>
 										  </ul>
 									  </el-collapse-item>
 									  
@@ -98,11 +106,16 @@
 								<el-collapse v-model="activeNames">
   									<el-collapse-item>
     									<template #title>
-      										<i class="header-icon el-icon-tickets"></i>
-					 		 				<span>办公区管理</span>
+											<router-link to='/officeAreaManage'>
+      											<i class="header-icon el-icon-tickets"></i>
+					 		 					<span>办公区管理</span>
+											</router-link>
     									</template>
-										  <div><i class="header-icon el-icon-tickets"></i>
-											  新增办公区
+										  <div>
+											  <router-link to="/newOfficeArea">
+											  	<i class="header-icon el-icon-tickets"></i>
+											  	新增办公区
+											  </router-link>
 										  </div>
 									  </el-collapse-item>
 									  
@@ -114,11 +127,16 @@
 								<el-collapse v-model="activeNames">
   									<el-collapse-item>
     									<template #title>
-      										<i class="header-icon el-icon-tickets"></i>
-					 		 				<span>会议室设备</span>
+											<router-link to="/meetingRoomEquip">
+      											<i class="header-icon el-icon-tickets"></i>
+					 		 					<span>会议室设备</span>
+											</router-link>
     									</template>
-										<div><i class="header-icon el-icon-tickets"></i>
-										  新增会议室设备
+										<div>
+											<router-link to="/newMeetingRoomEquip">
+											 	<i class="header-icon el-icon-tickets"></i>
+										  		新增会议室设备
+											</router-link>
 									  </div>
 										 
 									  </el-collapse-item>

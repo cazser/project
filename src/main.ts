@@ -5,6 +5,9 @@ import { createWebHashHistory , createRouter} from 'vue-router'
 import Frank from './components/Frank.vue';
 import Frank2 from './components/Frank2.vue';
 import Antd from 'ant-design-vue';
+
+
+
 import SelectCharacter from './pages/SelectCharacter.vue'
 import LevelAssign from './pages/LevelAssign.vue'
 import NewLevel from './pages/NewLevel.vue'
@@ -15,7 +18,12 @@ import MeetingRoomList from './pages/MeetingRoomList.vue'
 import New from './pages/New.vue'
 import Edit from './pages/Edit.vue'
 import OutOfUse from './pages/OutOfUse.vue'
-
+import BitImport from './pages/BitImport.vue'
+import BitModify from './pages/BitModify.vue'
+import NewOfficeArea from './pages/NewOfficeArea.vue'
+import NewMeetingRoomEquip from './pages/NewMeetingRoomEquip.vue'
+import MeetingRoomEquip from './pages/MeetingRoomEquip.vue'
+import OfficeAreaManage from './pages/OfficeAreaManage.vue'
 
 import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
@@ -41,7 +49,13 @@ const router  = createRouter({
 		{path:'/meetingRoomList', component: MeetingRoomList},
 		{path:'/new', component: New},
 		{path:'/edit', component: Edit},
-		{path:'/outOfUse', component: OutOfUse}
+		{path:'/outOfUse', component: OutOfUse},
+		{path:'/bitImport', component: BitImport},
+		{path:'/bitModify', component: BitModify},
+		{path:'/newOfficeArea', component: NewOfficeArea},
+		{path:'/newMeetingRoomEquip', component: NewMeetingRoomEquip},
+		{path:'/meetingRoomEquip', component: MeetingRoomEquip},
+		{path:'/officeAreaManage', component: OfficeAreaManage}
 	]
 })
 
