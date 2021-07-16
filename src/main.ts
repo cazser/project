@@ -34,6 +34,14 @@ import CurBook from './pages/CurBook.vue'
 import ApplyConfig from './pages/ApplyConfig.vue'
 import ApplyCharacterManage from './pages/ApplyCharacterManage.vue'
 import ApplyProgressConfig from './pages/ApplyProgressConfig.vue'
+import NewApply from './pages/NewApply.vue'
+import Step1 from './pages/Step1.vue'
+import Step2 from './pages/Step2.vue'
+import Step3 from './pages/Step3.vue'
+
+
+
+
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -75,7 +83,11 @@ const router  = createRouter({
 		{path:'/curBook', component: CurBook},
 		{path:'/applyConfig', component:ApplyConfig},
 		{path:'/applyCharacterManage', component: ApplyCharacterManage},
-		{path:'/applyProgressConfig', component: ApplyProgressConfig}
+		{path:'/applyProgressConfig', component: ApplyProgressConfig},
+		{path:'/newApply', component: NewApply},
+		{path:'/step1', component: Step1},
+		{path:'/step2', component: Step2},
+		{path: '/step3', component: Step3}
 	]
 })
 

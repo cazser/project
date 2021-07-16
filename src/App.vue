@@ -230,10 +230,30 @@
 											</router-link>
 										</template>
 										<ul style="margin-left:10px">
-											<li><i class="header-icon el-icon-tickets"></i>新增</li>
-											<li><i class="header-icon el-icon-tickets"></i>第一步</li>
-											<li><i class="header-icon el-icon-tickets"></i>第二步</li>
-											<li><i class="header-icon el-icon-tickets"></i>第三步</li>
+											<li>
+												<router-link to="/newApply">
+												<i class="header-icon el-icon-tickets"></i>新增
+												</router-link>
+											</li>
+
+											<li>
+												<router-link to="/step1">
+													<i class="header-icon el-icon-tickets"></i>
+													第一步
+												</router-link>
+											</li>
+											<li>
+												<router-link to="/step2">
+													<i class="header-icon el-icon-tickets"></i>
+													第二步
+												</router-link>
+											</li>
+											<li>	
+												<router-link to="/step3">
+													<i class="header-icon el-icon-tickets"></i>
+													第三步
+												</router-link>
+											</li>
 										</ul>
 									</el-collapse-item>
 								</el-collapse>
