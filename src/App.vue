@@ -1,7 +1,7 @@
 <template>
   <el-container style="height: 100%; border: 1px solid #eee">
   <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-	    <el-collapse v-model="activeNames">
+	    <el-collapse v-model="activeNames" style="overflow: scroll;">
   			<el-collapse-item>
     			<template #title>
       				<i class="header-icon el-icon-folder"></i>
@@ -22,7 +22,18 @@
       									<i class="header-icon el-icon-tickets"></i>
 										<router-link to="/selectCharacter">选择角色</router-link>
 									</template>
-									<router-link to="/">系统管理</router-link>
+									<div style="margin-left:10px">
+										<el-collapse v-model="activeNames">
+											<el-collapse-item>
+											<template #title>
+												<i class="header-icon el-icon-tickets"></i>
+												<router-link to="/selectCharacter">权限分配</router-link>
+											</template>
+											<router-link to="/"><i class="el-icon-tickets"></i>新增分级</router-link>
+											</el-collapse-item>
+										</el-collapse>
+									</div>
+									<router-link to="/"><i class="el-icon-tickets"></i>系统管理</router-link>
 								</el-collapse-item>
 							</el-collapse>
 						</div>
@@ -35,6 +46,28 @@
       						<i class="header-icon el-icon-folder"></i>
 					  		<span>分区管理员</span>
     					</template>
+						<router-link to="/"><i class="el-icon-tickets"></i>选择角色</router-link>
+						<div style="margin-left: 10px;">
+						<el-collapse v-model="activeNames">
+  							<el-collapse-item>
+    							<template #title>
+      								<i class="header-icon el-icon-tickets"></i>
+					  				<span>会议室管理</span>
+    							</template>
+								<div style="margin-left: 10px;">
+								<el-collapse v-model="activeNames">
+  									<el-collapse-item>
+    									<template #title>
+      										<i class="header-icon el-icon-tickets"></i>
+					 		 				<span>会议室列表</span>
+    									</template>
+									  </el-collapse-item>
+									  
+									</el-collapse>
+								</div>
+							  </el-collapse-item>
+						</el-collapse>
+						</div>
 					</el-collapse-item>
 				</el-collapse>
 				<el-collapse v-model="activeNames">
@@ -43,6 +76,7 @@
       						<i class="header-icon el-icon-folder"></i>
 					  		<span>办公区管理员</span>
     					</template>
+						<router-link to="/"><i class="el-icon-tickets"></i>选择角色</router-link>
 					</el-collapse-item>
 				</el-collapse>
 				</div>
