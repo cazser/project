@@ -258,10 +258,30 @@
 									</el-collapse-item>
 								</el-collapse>
 								</div>
-								<div><i class="header-icon el-icon-tickets"></i>预定权限</div>
-								<div><i class="header-icon el-icon-tickets"></i>参会人权限</div>
-								<div><i class="header-icon el-icon-tickets"></i>关联视频会议</div>
-								<div><i class="header-icon el-icon-tickets"></i>关联电子屏显示</div>
+								<div>
+									<router-link to="/bookLevel">
+										<i class="header-icon el-icon-tickets"></i>
+										预定权限
+									</router-link>
+								</div>
+								<div>
+									<router-link to="/johnerLevel">
+										<i class="header-icon el-icon-tickets"></i>
+										参会人权限
+									</router-link>
+								</div>
+								<div>
+									<router-link to="/assocVideoMeeting">
+										 <i class="header-icon el-icon-tickets"></i>
+										 关联视频会议
+									</router-link>
+								</div>
+								<div>
+									<router-link to="/assocScreenDisplay">
+										<i class="header-icon el-icon-tickets"></i>
+										关联电子屏显示
+									</router-link>
+								</div>
 							  </el-collapse-item>
 						</el-collapse>
 						</div>

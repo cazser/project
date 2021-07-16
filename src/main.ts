@@ -38,10 +38,10 @@ import NewApply from './pages/NewApply.vue'
 import Step1 from './pages/Step1.vue'
 import Step2 from './pages/Step2.vue'
 import Step3 from './pages/Step3.vue'
-
-
-
-
+import BookLevel from './pages/BookLevel.vue'
+import JohnerLevel from './pages/JohnerLevel.vue'
+import AssocVideoMeeting from './pages/AssocVideoMeeting.vue'
+import AssocScreenDisplay from './pages/AssocScreenDisplay.vue'
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -87,7 +87,11 @@ const router  = createRouter({
 		{path:'/newApply', component: NewApply},
 		{path:'/step1', component: Step1},
 		{path:'/step2', component: Step2},
-		{path: '/step3', component: Step3}
+		{path: '/step3', component: Step3},
+		{path:'/bookLevel', component: BookLevel},
+		{path: '/johnerLevel', component: JohnerLevel},
+		{path: '/assocVideoMeeting', component: AssocVideoMeeting},
+		{path: '/assocScreenDisplay', component: AssocScreenDisplay}
 	]
 })
 
