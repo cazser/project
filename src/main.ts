@@ -59,7 +59,9 @@ import Edit1 from './pages/Edit1.vue'
 import OutOfUse1 from './pages/OutOfUse1.vue'
 import BitImport1 from './pages/BitImport1.vue'
 import BitModify1 from './pages/BitModify1.vue'
-
+import BookManage2 from './pages/BookManage2.vue'
+import BookManage3 from './pages/BookManage3.vue'
+import CurBook1 from './pages/CurBook1.vue'
 
 
 
@@ -127,7 +129,10 @@ const router  = createRouter({
 		{path:'/edit1', component: Edit1},
 		{path:'/outOfUse1', component: OutOfUse1},
 		{path:'/bitImport1', component: BitImport1},
-		{path:'/bitModify1', component: BitModify1}
+		{path:'/bitModify1', component: BitModify1},
+		{path:'/bookManage2', component: BookManage2},
+		{path:'/bookManage3', component: BookManage3},
+		{path:'/curBook1', component: CurBook1}
 	
 	]
 })
