@@ -91,8 +91,8 @@ import ChooseCharacter from './pages/ChooseCharacter.vue'
 import PreserveApply from './pages/PreserveApply.vue'
 import ChooseTime from './pages/ChooseTime.vue'
 import PreserveSuccess from './pages/PreserveSuccess.vue'
-
-
+import MyPreserve1 from './pages/MyPreserve1.vue'
+import MyApply from './pages/MyApply.vue'
 
 import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
@@ -190,7 +190,9 @@ const router  = createRouter({
 		{path: '/chooseCharacter', component: ChooseCharacter},
 		{path: '/preserveApply', component: PreserveApply},
 		{path: '/chooseTime', component: ChooseTime},
-		{path: '/preserveSuccess', component: PreserveSuccess}
+		{path: '/preserveSuccess', component: PreserveSuccess},
+		{path: '/myPreserve1', component: MyPreserve1},
+		{path: '/myApply', component: MyApply}
 	]
 })
 

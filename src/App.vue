@@ -720,8 +720,18 @@
 						</div>
 					</el-collapse-item>
 				</div>
-				<div><i class="header-icon el-icon-tickets"></i>我的预定</div>
-				<div><i class="header-icon el-icon-tickets"></i>我的审批</div>
+				<div>
+					<router-link to="/myPreserve1">
+						<i class="header-icon el-icon-tickets"></i>
+						我的预定
+					</router-link>
+				</div>
+				<div>
+					<router-link to="/myApply">
+						<i class="header-icon el-icon-tickets"></i>
+						我的审批
+					</router-link>
+				</div>
   			</el-collapse-item>
   			
 			</el-collapse>
