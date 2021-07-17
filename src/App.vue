@@ -615,14 +615,25 @@
       				<i class="header-icon el-icon-folder"></i>
 					  <span>移动端</span>
     			</template>
-    			<div><i class="header-icon el-icon-tickets"></i>多身份选择</div>
+    			<div>
+					<router-link to="/multiCharacterSelect">
+					 	<i class="header-icon el-icon-tickets"></i>
+						 多身份选择
+					</router-link>
+				</div>
 				<div style="margin-left:10px;">
 					<el-collapse-item>
 						<template #title>
-							<i class="header-icon el-icon-folder"></i>
-							<span>会议室列表</span>
+							<router-link to="/meetingRoomList2">
+								<i class="header-icon el-icon-tickets"></i>
+								<span>会议室列表</span>
+							</router-link>
 						</template>
-						<div><i class="header-icon el-icon-tickets"></i>预定页面</div>
+						<div>
+							<router-link to="/bookPage">
+								<i class="header-icon el-icon-tickets"></i>预定页面
+							</router-link>
+						</div>
 						<div><i class="header-icon el-icon-tickets"></i>预定成功</div>
 						<div><i class="header-icon el-icon-tickets"></i>预定详情</div>
 						<div><i class="header-icon el-icon-tickets"></i>预定须知</div>
@@ -660,7 +671,7 @@
   <el-container>
   
 
-    <el-main>
+    <el-main style="height: 100%;">
      <router-view></router-view> 
     </el-main>
   </el-container>

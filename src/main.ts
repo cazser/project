@@ -76,6 +76,12 @@ import CheckOvertimeRecord1 from './pages/CheckOvertimeRecord1.vue'
 import Detail4 from './pages/Detail4.vue'
 import CancelRecord1 from './pages/CancelRecord1.vue'
 import Detail5 from './pages/Detail5.vue'
+import MultiCharacter from './pages/MultiCharacterSelect.vue'
+import MeetingRoomList2 from './pages/MeetingRoomList2.vue'
+import BookPage from './pages/BookPage.vue'
+
+
+
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -159,7 +165,10 @@ const router  = createRouter({
 		{path: '/checkOvertimeRecord1', component: CheckOvertimeRecord1},
 		{path: '/detail4', component: Detail4},
 		{path: '/cancelRecord1', component: CancelRecord1},
-		{path: '/detail5', component: Detail5}
+		{path: '/detail5', component: Detail5},
+		{path: '/multiCharacterSelect', component: MultiCharacter},
+		{path: '/meetingRoomList2', component: MeetingRoomList2},
+		{path: '/bookPage', component: BookPage}
 	
 	]
 })
