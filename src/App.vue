@@ -557,7 +557,12 @@
 					 	 					<span>预定成功记录</span>
 										</router-link>
     								</template>
-									<div><i class="header-icon el-icon-tickets"></i>详情</div>
+									<div>
+										<router-link to="/detail3">
+											<i class="header-icon el-icon-tickets"></i>
+											详情
+										</router-link>
+									</div>
 									  </el-collapse-item>
 								</el-collapse>
 								</div>
@@ -565,10 +570,17 @@
 								<el-collapse v-model="activeNames">
   									<el-collapse-item>
     								<template #title>
-      									<i class="header-icon el-icon-tickets"></i>
-					 	 				<span>签到超时记录</span>
+										<router-link to="/checkOvertimeRecord1">
+      										<i class="header-icon el-icon-tickets"></i>
+					 	 					<span>签到超时记录</span>
+										</router-link>
     								</template>
-									<div><i class="header-icon el-icon-tickets"></i>详情</div>
+									<div>
+										<router-link to="/detail4">
+											<i class="header-icon el-icon-tickets"></i>
+											详情
+										</router-link>
+									</div>
 									  </el-collapse-item>
 								</el-collapse>
 								</div>
@@ -576,10 +588,17 @@
 								<el-collapse v-model="activeNames">
   									<el-collapse-item>
     								<template #title>
-      									<i class="header-icon el-icon-tickets"></i>
-					 	 				<span>撤销记录</span>
+										<router-link to="/cancelRecord1">
+      										<i class="header-icon el-icon-tickets"></i>
+					 	 					<span>撤销记录</span>
+										</router-link>
     								</template>
-									<div><i class="header-icon el-icon-tickets"></i>详情</div>
+									<div>
+										<router-link to="/detail5">
+										 	<i class="header-icon el-icon-tickets"></i>
+											 详情
+										</router-link>
+									</div>
 									  </el-collapse-item>
 								</el-collapse>
 								</div>
