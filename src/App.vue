@@ -499,10 +499,30 @@
 											</router-link>
     									</template>
 										  <ul>
-											  <li><i class="header-icon el-icon-tickets"></i>新增</li>
-											  <li><i class="header-icon el-icon-tickets"></i>第一步</li>
-											  <li><i class="header-icon el-icon-tickets"></i>第二步</li>
-											  <li><i class="header-icon el-icon-tickets"></i>第三步</li>
+											  <li>
+												  <router-link to="/new2">
+												   <i class="header-icon el-icon-tickets"></i>
+												   新增
+												  </router-link>
+											  </li>
+											  <li>
+												  <router-link to="/step_1">
+												   	<i class="header-icon el-icon-tickets"></i>
+													   第一步
+												  </router-link>
+											  </li>
+											  <li>
+												  <router-link to="/step_2">
+												  	<i class="header-icon el-icon-tickets"></i>
+													  第二步
+												  </router-link>
+											  </li>
+											  <li>
+												  <router-link to="/step_3">
+												  	<i class="header-icon el-icon-tickets"></i>
+													  第三步
+												  </router-link>
+											  </li>
 											  
 										  </ul>
 									  </el-collapse-item>
