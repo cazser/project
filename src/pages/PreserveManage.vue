@@ -1,4 +1,5 @@
 <template>
+<body>
 	 <div id="base" class="">
 
       <!-- Unnamed (矩形) -->

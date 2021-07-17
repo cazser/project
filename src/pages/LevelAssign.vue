@@ -73,7 +73,8 @@
 
           <!-- Unnamed (三角形) -->
           <div id="u38" class="ax_default _流程形状1">
-            <img id="u38_img" class="img " src="images/权限分配/u38.svg"/>
+            <img id="u38_img" class="img " src="image/权限分配/u38.svg" />
+			
             <div id="u38_text" class="text " style="display:none; visibility: hidden">
               <p></p>
             </div>
@@ -440,7 +441,7 @@ div.refpageimage {
     width: 16px;
     height: 16px;
     cursor: pointer;
-    background-image: url(images/newwindow.gif);
+   /* background-image: url(images/newwindow.gif);*/
     background-repeat: no-repeat;
 }
 
