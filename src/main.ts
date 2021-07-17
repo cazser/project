@@ -79,10 +79,10 @@ import Detail5 from './pages/Detail5.vue'
 import MultiCharacter from './pages/MultiCharacterSelect.vue'
 import MeetingRoomList2 from './pages/MeetingRoomList2.vue'
 import BookPage from './pages/BookPage.vue'
-
-
-
-
+import BookSuccess from './pages/BookSuccess.vue'
+import BookDetail from './pages/BookDetail.vue'
+import BookToKnow1 from './pages/BookToKnow1.vue'
+import Johner from './pages/Johner.vue'
 
 import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
@@ -168,8 +168,11 @@ const router  = createRouter({
 		{path: '/detail5', component: Detail5},
 		{path: '/multiCharacterSelect', component: MultiCharacter},
 		{path: '/meetingRoomList2', component: MeetingRoomList2},
-		{path: '/bookPage', component: BookPage}
-	
+		{path: '/bookPage', component: BookPage},
+		{path: '/bookSuccess', component: BookSuccess},
+		{path: '/bookDetail', component: BookDetail},
+		{path: '/bookToKnow1', component: BookToKnow1},
+		{path: '/johner', component: Johner}
 	]
 })
 

@@ -631,13 +631,34 @@
 						</template>
 						<div>
 							<router-link to="/bookPage">
-								<i class="header-icon el-icon-tickets"></i>预定页面
+								<i class="header-icon el-icon-tickets"></i>
+								预定页面
 							</router-link>
 						</div>
-						<div><i class="header-icon el-icon-tickets"></i>预定成功</div>
-						<div><i class="header-icon el-icon-tickets"></i>预定详情</div>
-						<div><i class="header-icon el-icon-tickets"></i>预定须知</div>
-						<div><i class="header-icon el-icon-tickets"></i>参会人</div>
+						<div>
+							<router-link to="/bookSuccess">
+								<i class="header-icon el-icon-tickets"></i>
+								预定成功
+							</router-link>
+						</div>
+						<div>
+							<router-link to="/bookDetail">
+								<i class="header-icon el-icon-tickets"></i>
+								预定详情
+							</router-link>
+						</div>
+						<div>
+							<router-link to="/bookToKnow1">
+								<i class="header-icon el-icon-tickets"></i>
+								预定须知
+							</router-link>
+						</div>
+						<div>
+							<router-link to="/johner">
+								<i class="header-icon el-icon-tickets"></i>
+								参会人
+							</router-link>
+						</div>
 					</el-collapse-item>
 				</div>
 				<div><i class="header-icon el-icon-tickets"></i>查看预定</div>
@@ -654,7 +675,7 @@
 				<div style="margin-left:10px;">
 					<el-collapse-item>
 						<template #title>
-							<i class="header-icon el-icon-folder"></i>
+							<i class="header-icon el-icon-tickets"></i>
 							<span>预定申请</span>
 						</template>
 						<div><i class="header-icon el-icon-tickets"></i>选择时间</div>
