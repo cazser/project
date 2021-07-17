@@ -69,7 +69,13 @@ import New2 from './pages/New2.vue'
 import Step_1 from './pages/Step_1.vue'
 import Step_2 from './pages/Step_2.vue'
 import Step_3 from './pages/Step_3.vue'
-
+import HistoryBookRecord1 from './pages/HistoryBookRecord1.vue'
+import BookSuccessRecord1 from './pages/BookSuccessRecord1.vue'
+import Detail3 from './pages/Detail3.vue'
+import CheckOvertimeRecord1 from './pages/CheckOvertimeRecord1.vue'
+import Detail4 from './pages/Detail4.vue'
+import CancelRecord1 from './pages/CancelRecord1.vue'
+import Detail5 from './pages/Detail5.vue'
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -146,7 +152,15 @@ const router  = createRouter({
 		{path:'/step_1', component: Step_1},
 		{path:'/step_2', component: Step_2},
 		{path: '/step_3', component: Step_3},
-		{path:'/new2', component: New2}
+		{path:'/new2', component: New2},
+		{path: '/historyBookRecord1', component: HistoryBookRecord1},
+		{path: '/bookSuccessRecord1', component: BookSuccessRecord1},
+		{path: '/detail3', component: Detail3},
+		{path: '/checkOvertimeRecord1', component: CheckOvertimeRecord1},
+		{path: '/detail4', component: Detail4},
+		{path: '/cancelRecord1', component: CancelRecord1},
+		{path: '/detail5', component: Detail5}
+	
 	]
 })
 
