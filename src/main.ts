@@ -62,7 +62,9 @@ import BitModify1 from './pages/BitModify1.vue'
 import BookManage2 from './pages/BookManage2.vue'
 import BookManage3 from './pages/BookManage3.vue'
 import CurBook1 from './pages/CurBook1.vue'
-
+import ApplyConfig1 from './pages/ApplyConfig1.vue'
+import ApplyCharacterManage1 from './pages/ApplyCharacterManage1.vue'
+import ApplyProgressConfig1 from './pages/ApplyProgressConfig1.vue'
 
 
 import 'ant-design-vue/dist/antd.css';
@@ -132,7 +134,10 @@ const router  = createRouter({
 		{path:'/bitModify1', component: BitModify1},
 		{path:'/bookManage2', component: BookManage2},
 		{path:'/bookManage3', component: BookManage3},
-		{path:'/curBook1', component: CurBook1}
+		{path:'/curBook1', component: CurBook1},
+		{path:'/applyConfig1', component: ApplyConfig1},
+		{path:'/applyCharacterManage1', component: ApplyCharacterManage1},
+		{path:'/applyProgressConfig1', component: ApplyProgressConfig1},
 	
 	]
 })

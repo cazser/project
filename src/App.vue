@@ -478,16 +478,25 @@
 						<el-collapse v-model="activeNames">
   							<el-collapse-item>
     							<template #title>
-      								<i class="header-icon el-icon-tickets"></i>
-					  				<span>应用配置</span>
+									<router-link to="/applyConfig1">
+      									<i class="header-icon el-icon-tickets"></i>
+					  					<span>应用配置</span>
+									</router-link>
     							</template>
-								<div><i class="header-icon el-icon-tickets"></i>审批角色管理</div>
+								<div>
+									<router-link to="/applyCharacterManage1">
+										<i class="header-icon el-icon-tickets"></i>
+										审批角色管理
+									</router-link>
+								</div>
 								<div style="margin-left: 10px;">
 								<el-collapse v-model="activeNames">
   									<el-collapse-item>
     									<template #title>
-      										<i class="header-icon el-icon-tickets"></i>
-					 		 				<span>审批流程配置</span>
+											<router-link to="/applyProgressConfig1">
+									  			<i class="header-icon el-icon-tickets"></i>
+					 		 					<span>审批流程配置</span>
+											</router-link>
     									</template>
 										  <ul>
 											  <li><i class="header-icon el-icon-tickets"></i>新增</li>
