@@ -661,8 +661,18 @@
 						</div>
 					</el-collapse-item>
 				</div>
-				<div><i class="header-icon el-icon-tickets"></i>查看预定</div>
-				<div><i class="header-icon el-icon-tickets"></i>我的预定</div>
+				<div>
+					<router-link to="/checkBook">
+					 	<i class="header-icon el-icon-tickets"></i>
+						 查看预定
+					</router-link>
+				</div>
+				<div>
+					<router-link to="/myPreserve">
+						<i class="header-icon el-icon-tickets"></i>
+						我的预定
+					</router-link>
+				</div>
 				<div><i class="header-icon el-icon-tickets"></i>预定管理</div>
 				<div><i class="header-icon el-icon-tickets"></i>公号消息</div>
   			</el-collapse-item>

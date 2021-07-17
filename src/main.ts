@@ -83,6 +83,10 @@ import BookSuccess from './pages/BookSuccess.vue'
 import BookDetail from './pages/BookDetail.vue'
 import BookToKnow1 from './pages/BookToKnow1.vue'
 import Johner from './pages/Johner.vue'
+import CheckBook from './pages/CheckBook.vue'
+import MyPreserve from './pages/MyPreserve.vue'
+
+
 
 import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
@@ -172,7 +176,9 @@ const router  = createRouter({
 		{path: '/bookSuccess', component: BookSuccess},
 		{path: '/bookDetail', component: BookDetail},
 		{path: '/bookToKnow1', component: BookToKnow1},
-		{path: '/johner', component: Johner}
+		{path: '/johner', component: Johner},
+		{path:'/checkBook', component: CheckBook},
+		{path: '/myPreserve', component: MyPreserve}
 	]
 })
 
