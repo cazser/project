@@ -673,8 +673,18 @@
 						我的预定
 					</router-link>
 				</div>
-				<div><i class="header-icon el-icon-tickets"></i>预定管理</div>
-				<div><i class="header-icon el-icon-tickets"></i>公号消息</div>
+				<div>
+					<router-link to="/preserveManage">
+						<i class="header-icon el-icon-tickets"></i>
+						预定管理
+					</router-link>
+				</div>
+				<div>
+					<router-link to="/publicMessage">
+						<i class="header-icon el-icon-tickets"></i>
+						公号消息
+					</router-link></div>
+			  
   			</el-collapse-item>
   			<el-collapse-item>
 				  <template #title>
