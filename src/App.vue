@@ -683,7 +683,8 @@
 					<router-link to="/publicMessage">
 						<i class="header-icon el-icon-tickets"></i>
 						公号消息
-					</router-link></div>
+					</router-link>
+				</div>
 			  
   			</el-collapse-item>
   			<el-collapse-item>
@@ -691,12 +692,19 @@
       				<i class="header-icon el-icon-folder"></i>
 					  <span>PC端</span>
     			</template>
-    			<div><i class="header-icon el-icon-tickets"></i>选择身份</div>
+    			<div>
+					<router-link to="/chooseCharacter">
+						<i class="header-icon el-icon-tickets"></i>
+						选择身份
+					</router-link>
+				</div>
 				<div style="margin-left:10px;">
 					<el-collapse-item>
 						<template #title>
-							<i class="header-icon el-icon-tickets"></i>
-							<span>预定申请</span>
+							<router-link to="/preserveApply">
+								<i class="header-icon el-icon-tickets"></i>
+								<span>预定申请</span>
+							</router-link>
 						</template>
 						<div><i class="header-icon el-icon-tickets"></i>选择时间</div>
 						<div><i class="header-icon el-icon-tickets"></i>预定成功</div>

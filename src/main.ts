@@ -87,6 +87,12 @@ import CheckBook from './pages/CheckBook.vue'
 import MyPreserve from './pages/MyPreserve.vue'
 import PreserveManage from './pages/PreserveManage.vue'
 import PublicMessage from './pages/PublicMessage.vue'
+import ChooseCharacter from './pages/ChooseCharacter.vue'
+import PreserveApply from './pages/PreserveApply.vue'
+
+
+
+
 
 import 'ant-design-vue/dist/antd.css';
 //import Component from './shims-vue'
@@ -180,7 +186,9 @@ const router  = createRouter({
 		{path:'/checkBook', component: CheckBook},
 		{path: '/myPreserve', component: MyPreserve},
 		{path: '/preserveManage', component: PreserveManage},
-		{path: '/publicMessage', component: PublicMessage}
+		{path: '/publicMessage', component: PublicMessage},
+		{path: '/chooseCharacter', component: ChooseCharacter},
+		{path: '/preserveApply', component: PreserveApply}
 	]
 })
 
