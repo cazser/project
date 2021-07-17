@@ -89,8 +89,8 @@ import PreserveManage from './pages/PreserveManage.vue'
 import PublicMessage from './pages/PublicMessage.vue'
 import ChooseCharacter from './pages/ChooseCharacter.vue'
 import PreserveApply from './pages/PreserveApply.vue'
-
-
+import ChooseTime from './pages/ChooseTime.vue'
+import PreserveSuccess from './pages/PreserveSuccess.vue'
 
 
 
@@ -188,7 +188,9 @@ const router  = createRouter({
 		{path: '/preserveManage', component: PreserveManage},
 		{path: '/publicMessage', component: PublicMessage},
 		{path: '/chooseCharacter', component: ChooseCharacter},
-		{path: '/preserveApply', component: PreserveApply}
+		{path: '/preserveApply', component: PreserveApply},
+		{path: '/chooseTime', component: ChooseTime},
+		{path: '/preserveSuccess', component: PreserveSuccess}
 	]
 })
 

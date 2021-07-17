@@ -706,8 +706,18 @@
 								<span>预定申请</span>
 							</router-link>
 						</template>
-						<div><i class="header-icon el-icon-tickets"></i>选择时间</div>
-						<div><i class="header-icon el-icon-tickets"></i>预定成功</div>
+						<div>
+							<router-link to="/chooseTime">
+								<i class="header-icon el-icon-tickets"></i>
+								选择时间
+							</router-link>
+						</div>
+						<div>
+							<router-link to="/preserveSuccess">
+								<i class="header-icon el-icon-tickets"></i>
+								预定成功
+							</router-link>
+						</div>
 					</el-collapse-item>
 				</div>
 				<div><i class="header-icon el-icon-tickets"></i>我的预定</div>
